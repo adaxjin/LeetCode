@@ -30,7 +30,7 @@ class Solution {
         path.append('(');
         dfs(res, path, n, delta + 1);
         path.setLength(len);
-        
+         
         // ) 
         path.append(')');
         dfs(res, path, n, delta - 1);
