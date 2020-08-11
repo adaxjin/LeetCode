@@ -1,3 +1,5 @@
+import Setup.ListNode;
+
 public class MyStack<T> {
     // field
     private ListNode<T> head;

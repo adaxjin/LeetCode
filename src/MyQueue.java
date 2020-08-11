@@ -1,3 +1,5 @@
+import Setup.ListNode2;
+
 public class MyQueue<E> {
     // fields
     private ListNode2<E> head, tail;

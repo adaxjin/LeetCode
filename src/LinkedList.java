@@ -1,7 +1,9 @@
+import Setup.ListNode2;
+
 public class LinkedList<E> {
     //fields
-    private ListNode<E> head;
-    private ListNode<E> tail;
+    private ListNode2<E> head;
+    private ListNode2<E> tail;
     private int size;
 
     //methods
@@ -16,16 +18,16 @@ public class LinkedList<E> {
         if (head == null || index < 0 || index > size - 1){
             return -1; // throw new IllegalArgumentsException("");
         }
-        ListNode<E> cur = head;
+        ListNode2<E> cur = head;
         while (index > 0){
             cur = cur.next;
             index--;
         }
-        return cur.val;
+        return (int)cur.val;
     }
 
     public void addHead(int val){
-        ListNode<E> newHead = new ListNode<E>(val);
+        ListNode2<E> newHead = new ListNode2<>(val);
         if (head == null){
             tail = newHead;
         } else {
@@ -37,7 +39,7 @@ public class LinkedList<E> {
     }
 
     public void addTail(int val){
-        ListNode<E> newTail = new ListNode<E>(val);
+        ListNode2<E> newTail = new ListNode2<>(val);
         if (tail == null){
             head = newTail;
         } else {
