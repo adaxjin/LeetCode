@@ -7,7 +7,7 @@
 - 中间过程中delta < 0，右括号多了，rmR++
 - 结束时delta != 0，左括号多，rmL++
 
-S1
+S1:
 此题答案中不能出现重复，res需要先加进hashset里查重
 如果可以出现重复答案，直接return array list
 */
