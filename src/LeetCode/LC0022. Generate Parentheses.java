@@ -5,6 +5,10 @@ check delta = #(() - #())
 3. 只能描述单一括号的关系，不能描述不同种括号嵌套的关系
 */
 
+package LeetCode;
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public List<String> generateParenthesis(int n) {
         //cc

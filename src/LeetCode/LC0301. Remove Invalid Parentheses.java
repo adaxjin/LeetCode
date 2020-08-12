@@ -12,7 +12,14 @@ S1:
 如果可以出现重复答案，直接return array list
 */
 
-class Solution {
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+class S1 {
     public List<String> removeInvalidParentheses(String s) {
         // cc
         Set<String> res = new HashSet<>();
@@ -79,7 +86,7 @@ class Solution {
 
 
 // S2: Without using hashset - deal in dfs
-class Solution {
+class S2 {
    public List<String> removeInvalidParentheses(String s) {
        List<String> result = new ArrayList<>();
        if (s == null) return result;
